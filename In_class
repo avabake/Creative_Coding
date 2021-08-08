@@ -1,0 +1,20 @@
+void setup(){
+  // runs once 
+  size(1000,800);
+  background (0);
+  }
+
+void draw(){
+  noStroke();
+  // runs repeatedly
+  line(0,0,width,height);
+  line(0, height, width, 0);
+  //draw the circle, centred
+  fill(mouseX,0,mouseY,128);
+  ellipse(mouseX, mouseY, 100, 100) ;
+  fill(0,0,255,128);
+  ellipse(mouseX+25, mouseY-25, 100, 100);
+  
+  // println("Hello!");
+  // rect(0,0,mouseX,mouseY);
+}
