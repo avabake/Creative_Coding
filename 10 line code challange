@@ -1,0 +1,200 @@
+// let x = 0;
+// let y = 0;
+// let spacing = 20;
+// let lineThickness = 1;
+// let shift = 0 + 6;
+
+
+// function setup() {
+//   createCanvas(400, 400);
+//   background(0)
+// }
+
+
+// function draw() {
+  
+//   stroke(255);
+//   strokeWeight (lineThickness)
+//   if (random(1) < 0.5) {
+//     line(x,y,x + spacing, y + spacing);
+//   } else {
+//     line(x,y + spacing, x + spacing,y);
+//   }
+//   x = x + spacing;
+//   if (x > width) {
+//     x = 0;
+//     y = y + spacing;
+//   }
+  
+//   while (y > height) {
+//     y = y += shift
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let x = 0;
+// let y = 0;
+// let spacing = 20;
+// let lineThickness = 20;
+// let shift = 0 + 6;
+
+// let col = {
+//   r: 0,
+//   g: 0,
+//   b: 0,
+// } 
+
+
+// function setup() {
+//   createCanvas(400, 400);
+//   background(51)
+// }
+
+
+// function draw() {
+  
+//   col.r = map(mouseX, width, 0, 0, 255)
+//   col.b = map(mouseY, 0, height, 0, 255)
+
+//   stroke(col.r, random(20, 80), col.b)
+//   strokeWeight (lineThickness)
+//   if (random(1) < 0.5) {
+//     line(x,y,x + spacing, y + spacing);
+//   } else {
+//     line(x,y + spacing, x + spacing,y);
+//   }
+//   x = x + spacing;
+//   if (x > width) {
+//     x = 0;
+//     y = y + spacing;
+//   }
+
+  
+//     if (y > height) {
+//       y = 0 
+//     }
+//   }
+
+
+
+
+let x = 0;
+let y = 0;
+let spacing = 20;
+let lineThickness = 10;
+let shift = 0 + 6;
+let fade = 2;
+
+let col = {
+  r: 0,
+  g: 0,
+  b: 0,
+} 
+
+
+function setup() {
+  createCanvas(400, 400);
+  background(51)
+}
+
+
+function draw() {
+  
+  background(0, fade);
+
+    if (mouseIsPressed) {
+    background(0, 150)
+  }
+  
+  col.r = map(mouseX, width, 0, 0, 255)
+  col.b = map(mouseY, 0, height, 0, 255)
+
+  stroke(col.r, random(20, 80), col.b)
+  strokeWeight (lineThickness)
+  if (random(1) < 0.5) {
+    line(x,y,x + spacing, y + spacing);
+  } else {
+    line(x,y + spacing, x + spacing,y);
+  }
+  x = x + spacing;
+  if (x > width) {
+    x = 0;
+    y = y + spacing;
+  }
+
+  
+    if (y > height) {
+      y = 0 + shift;
+      shift += 6;
+      
+      console.log(y);
+      }
+  }
+
+
+
+
+
+
+
+//   let x = 0;
+// let y = 0;
+// let spacing = 20;
+// let lineThickness = 7;
+// let shift = 0 + 6;
+
+// let stroke = 0;
+
+
+// function setup() {
+//   createCanvas(400, 400);
+//   background(51)
+//   stroke = random(255);
+// }
+
+
+// function draw() {
+  
+
+//   if (mouseIsPressed) {
+//     stroke = color(random(0,255), random(0,255), random(0,255));
+//   }
+  
+// //   col.r = map(mouseX, width, 0, 0, 255)
+// //   col.b = map(mouseY, 0, height, 0, 255)
+
+// //   stroke(col.r, random(20, 80), col.b)
+//   strokeWeight (lineThickness)
+//   if (random(1) < 0.5) {
+//     line(x,y,x + spacing, y + spacing);
+//   } else {
+//     line(x,y + spacing, x + spacing,y);
+//   }
+//   x = x + spacing;
+//   if (x > width) {
+//     x = 0;
+//     y = y + spacing;
+//   }
+
+  
+//     if (y > height) {
+//       y = 0 
+//     }
+//   }
+
+
